@@ -183,14 +183,14 @@ def pagination(page):
     items = []
     for item in results:
         items.append(item)
-    total_pages = len(items)//4+1
+    total_pages = len(items)//2+1
     total_users = len(items)
     return {
         "total_pages": total_pages,
         "total_users": total_users,
         "page": page,
-        "data": items[(page*4)-4: page*4],
-        "per_page": 4
+        "data": items[(page*2)-2: page*2],
+        "per_page": 2
         }
 
 #Details of a particular product

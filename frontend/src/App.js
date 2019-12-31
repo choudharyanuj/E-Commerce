@@ -14,6 +14,7 @@ import Login from './component/userlogin'
 import Cart from './component/cart'
 import Buy from './component/buy'
 import Orderdetails from './component/orderdetails'
+import Home1 from './component/home1'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -38,6 +39,7 @@ class App extends Component {
         <Route path="/cart" component={Cart}/>
         <Route path="/buy/:prod_id" render={(props) => <Buy {...props}/>}/>
         <Route path="/orderdetails" component={Orderdetails}/>
+        {/* <Home1/> */}
       </div>
     );
   }
